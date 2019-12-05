@@ -1,0 +1,32 @@
+{
+  "author": "birdsofsummer",
+  "name": "scf-cli",
+  "description": "scf + travis for JavaScript ",
+  "keywords": [
+    "scf",
+    "ci",
+    "functional",
+    "fp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/birdsofsummer/scf-cli.git"
+  },
+  "sideEffects": false,
+  "version": "0.0.1",
+  "dependencies": {
+    "commander": "^4.0.1",
+    "moment": "^2.24.0",
+    "ramda": "^0.26.1",
+    "superagent": "^5.1.2",
+    "tencentcloud-sdk-nodejs": "^3.0.103",
+    "toml": "^3.0.0",
+    "yaml": "^1.7.2"
+  },
+  "scripts": {
+    "deploy": "node src/index"
+  },
+  "bin": {
+    "scf-cli": "src/index.js"
+  }
+}

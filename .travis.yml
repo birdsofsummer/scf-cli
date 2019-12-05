@@ -1,0 +1,40 @@
+#https://docs.travis-ci.com/user/languages/javascript-with-nodejs/
+sudo: true
+language: node_js
+node_js:
+    - 8
+    - 10
+    - 12
+env:
+    - SecretId=****
+    - SecretKey=****
+    - Region=****
+    - Bucket=****
+    - Prefix=****
+    - COS_HOST=****
+    - maxFileSize=****
+    - CosBucketName=****
+    - CosObjectName=****
+    - CosBucketRegion=****
+    - ZipFile=****
+    - CodeSource=****
+    - DemoId=****
+    - TempCosObjectName=****
+    - GitUrl=****
+    - GitUserName=****
+    - GitPassword=****
+    - GitPasswordSecret=****
+    - GitBranch=****
+    - GitDirectory=****
+    - GitCommitId=****
+    - GitUserNameSecret
+    - EMBER_VERSION=default
+    - EMBER_VERSION=release
+    - EMBER_VERSION=beta
+    - EMBER_VERSION=canary  
+before_install:
+    # - export ccc=111
+install:
+    - npm install
+script: 
+    - ./deploy.sh
